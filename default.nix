@@ -6,11 +6,11 @@
 
 let
   pname = "t3code";
-  version = "0.0.4";
+  version = "0.0.8";
 
   src = fetchurl {
     url = "https://github.com/pingdotgg/t3code/releases/download/v${version}/T3-Code-${version}-x86_64.AppImage";
-    hash = "sha256-HlkQ/uPLXHh2Duamrmhp31yQqnETawQ4Ru7kg2MmpVs=";
+    hash = "sha256-DKEgAzrpmd69IBB3rntRGJHjS4LLrbq61GniSQbgFkE=";
   };
 
   desktopItem = makeDesktopItem {
@@ -34,7 +34,7 @@ appimageTools.wrapType2 {
   meta = with lib; {
     description = "T3 Chat desktop app";
     homepage = "https://github.com/pingdotgg/t3code";
-    downloadPage = "https://github.com/pingdotgg/t3code/releases/tag/v0.0.4";
+    downloadPage = "https://github.com/pingdotgg/t3code/releases/tag/v0.0.8";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
     license = licenses.mit;
     maintainers = [ ];
